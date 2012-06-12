@@ -2,7 +2,7 @@ Summary: R66T demo Traffic light package
 Name: r66t_traffic
 Version: 1
 Release: 1
-Source0: r66t_traffic.tar.gz
+Source0: r66t_traffic-1.tar.gz
 License: GPL
 Group: MyJunk
 BuildArch: noarch
