@@ -1,0 +1,4 @@
+[R66T]
+name=R66T Repo
+baseurl=http://repo.r66t.com/repo/centos/6/$basearch
+enabled=1

@@ -1,0 +1,27 @@
+Name:		R66T-Repo
+Version:	1
+Release:	1
+Summary:	The rpm file to install the repository location onto a machine
+
+Group:		R66T
+License:	GPL
+URL:		repo.r66t.com
+Source0:	SOURCE/r66t-repo.tar.gz
+BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-buildroot
+%description
+Make some relevant package description here
+%prep
+%setup -q
+%build
+%install
+install -m 0755 -d $RPM_BUILD_ROOT/etc/yum.repos.d
+install -m 0755 R66T.repo $RPM_BUILD_ROOT/etc/yum.repos.d/R66T.repo
+%clean
+rm -rf $RPM_BUILD_ROOT
+%post
+echo " "
+echo "This will display after rpm installs the package!"
+%files
+%dir /etc/yum.repos.d
+/etc/yum.repos.d/R66T.repo
